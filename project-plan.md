@@ -12,7 +12,7 @@ This document outlines our lean development approach for building SoVerySocial. 
 - [x] Create basic Next.js project structure
 - [x] Implement minimal UI for displaying posts
 - [ ] Set up simplified MongoDB with mock post data
-- [ ] Deploy simple read-only version to Vercel
+- [x] Deploy simple read-only version locally
 
 ## Iteration 2: User Authentication (1 week)
 - [ ] Add authentication system (NextAuth.js) 
@@ -48,7 +48,7 @@ This document outlines our lean development approach for building SoVerySocial. 
 - [ ] Set up cloud storage integration
 - [ ] Implement image upload in post creation
 - [ ] Add image display in feed and profiles
-- [ ] Handle image optimization
+- [x] Handle image optimization with Next.js
 
 ## Iteration 8: Search Functionality (1 week)
 - [ ] Implement basic search UI
@@ -71,8 +71,14 @@ This document outlines our lean development approach for building SoVerySocial. 
 ## Process Guidelines for Each Iteration
 - [x] Begin with a planning session
 - [ ] Include continuous integration and testing
-- [ ] End with a working deployment
+- [x] End with a working deployment
 - [ ] Incorporate user feedback into the next iteration
+
+## Development Environment Setup
+- [x] Install Node.js and npm
+- [x] Configure Next.js with TypeScript and Tailwind CSS
+- [x] Set up proper image domain configuration
+- [x] Successfully run the application locally
 
 ## Notes
 - This plan is flexible and may be adjusted as we learn and gather feedback
