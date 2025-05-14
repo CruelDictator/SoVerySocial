@@ -3,14 +3,14 @@
 This document outlines our lean development approach for building SoVerySocial. We'll build features incrementally, focusing on delivering working software early and adapting based on feedback.
 
 ## Core Principles
-- [ ] Deliver working software early and frequently
-- [ ] Build minimum viable features and iterate
-- [ ] Focus on user value with each iteration
-- [ ] Adapt based on feedback
+- [x] Deliver working software early and frequently
+- [x] Build minimum viable features and iterate
+- [x] Focus on user value with each iteration
+- [x] Adapt based on feedback
 
 ## Iteration 1: Minimum Viable Feed (1-2 weeks)
-- [ ] Create basic Next.js project structure
-- [ ] Implement minimal UI for displaying posts
+- [x] Create basic Next.js project structure
+- [x] Implement minimal UI for displaying posts
 - [ ] Set up simplified MongoDB with mock post data
 - [ ] Deploy simple read-only version to Vercel
 
@@ -69,7 +69,7 @@ This document outlines our lean development approach for building SoVerySocial. 
 - [ ] Add requested features from early users
 
 ## Process Guidelines for Each Iteration
-- [ ] Begin with a planning session
+- [x] Begin with a planning session
 - [ ] Include continuous integration and testing
 - [ ] End with a working deployment
 - [ ] Incorporate user feedback into the next iteration
