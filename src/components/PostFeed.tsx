@@ -38,13 +38,13 @@ export default function PostFeed() {
     return (
       <div className="space-y-4">
         {[1, 2, 3].map((i) => (
-          <div key={i} className="bg-white rounded-lg shadow p-4 h-32 animate-pulse">
+          <div key={i} className="bg-white rounded-lg shadow p-4 animate-pulse">
             <div className="flex items-start space-x-3">
-              <div className="flex-shrink-0 h-10 w-10 bg-gray-200 rounded-full"></div>
+              <div className="flex-shrink-0 h-10 w-10 bg-gray-400 rounded-full"></div>
               <div className="flex-1 space-y-3">
-                <div className="h-3 bg-gray-200 rounded w-3/4"></div>
-                <div className="h-3 bg-gray-200 rounded"></div>
-                <div className="h-3 bg-gray-200 rounded w-5/6"></div>
+                <div className="h-3 bg-gray-400 rounded w-3/4"></div>
+                <div className="h-3 bg-gray-400 rounded"></div>
+                <div className="h-3 bg-gray-400 rounded w-5/6"></div>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function PostFeed() {
   }
 
   if (error && posts.length === 0) {
-    return <div className="text-red-500 p-4">{error}</div>;
+    return <div className="text-red-500 bg-white p-4 rounded-lg shadow">{error}</div>;
   }
 
   return (

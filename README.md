@@ -1,4 +1,4 @@
-# SoVerySocial
+# SoVery
 
 A social media application project.
 

@@ -2,7 +2,7 @@ import { IPost } from '../models/Post';
 
 export const mockPosts: IPost[] = [
   {
-    content: "Just launched SoVerySocial! This platform is going to change how we connect online. #SocialMedia #Launch",
+    content: "Just launched SoVery! This platform is going to change how we connect online. #SocialMedia #Launch",
     author: {
       name: "Jane Smith",
       username: "janesmith",
