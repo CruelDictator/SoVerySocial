@@ -1,14 +1,15 @@
-import { Post as PostType } from '@/lib/mockData';
+"use client";
+
+import { IPost } from '@/models/Post';
 import Image from 'next/image';
 
 interface PostProps {
-  post: PostType;
+  post: IPost;
 }
 
 export default function Post({ post }: PostProps) {
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
+  const formatDate = (date: Date) => {
+    return new Date(date).toLocaleDateString('en-US', { 
       month: 'short', 
       day: 'numeric',
       year: 'numeric',
@@ -21,16 +22,16 @@ export default function Post({ post }: PostProps) {
         <div className="flex-shrink-0 h-10 w-10 relative">
           <Image
             className="rounded-full"
-            src={post.user.avatar}
-            alt={post.user.name}
+            src={post.author.image || 'https://i.pravatar.cc/150?img=1'}
+            alt={post.author.name}
             fill
             sizes="40px"
           />
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center space-x-1">
-            <p className="font-medium text-text truncate">{post.user.name}</p>
-            <span className="text-gray-500 text-sm">@{post.user.username}</span>
+            <p className="font-medium text-text truncate">{post.author.name}</p>
+            <span className="text-gray-500 text-sm">@{post.author.username}</span>
             <span className="text-gray-400 text-sm">·</span>
             <span className="text-gray-500 text-sm">{formatDate(post.createdAt)}</span>
           </div>
