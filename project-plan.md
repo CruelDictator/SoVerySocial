@@ -11,7 +11,7 @@ This document outlines our lean development approach for building SoVerySocial. 
 ## Iteration 1: Minimum Viable Feed (1-2 weeks)
 - [x] Create basic Next.js project structure
 - [x] Implement minimal UI for displaying posts
-- [ ] Set up simplified MongoDB with mock post data
+- [x] Set up simplified MongoDB with mock post data
 - [x] Deploy simple read-only version locally
 
 ## Iteration 2: User Authentication (1 week)
